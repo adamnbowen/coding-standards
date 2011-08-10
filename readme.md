@@ -89,8 +89,28 @@ It's ok to place additional code in a class file (eg require_once statement). In
 	{
 		// code, indented with 1 tab
 	}
+	
+Classes that implement interfaces or extend other classes should always be on one line.
+
+	class BackendUsersAdd extend BackendAction implements Backend, Users, Action
+	{
+	}
+	
 
 ## 4.2 Class member variables
+Member variables must be named according to Fork NG’s variable naming conventions. Any variables declared in a class must be listed alphabetically at the top of the class, above the declaration of any methods.
+
+The var construct is not permitted. Member variables always declare their visibility by using one of the private, protected or public modifiers (We advocate protected and not private). Giving access to member variables directly by declaring them as public is not permitted. If you have a list of multiple properties of the same type you may group them.
+
+	class BackendUsersIndex
+	{
+		/**
+		 * Forms
+		 *
+		 * @var BackendForm
+		 */
+		protected $frmLogin, $frmRegister;
+	}
 
 ## 5. Functions & Methods
 ### 5.1 Function/method declaration
