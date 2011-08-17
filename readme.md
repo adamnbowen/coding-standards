@@ -7,7 +7,7 @@ Files need to be encoded using _UTF-8_
 Only unix line endings _\n_ are allowed.
 
 ### 1.3 Tabs
-Code is indented using tabs. The display width of 1 tab is equal to 4 spaces.
+Code is indented using tabs.
 
 ### 1.4 Opening/closing tags
 Never use short open stags. Always go for the standard PHP tags. Note that we do NOT use a closing tag and end the file with a newline.
