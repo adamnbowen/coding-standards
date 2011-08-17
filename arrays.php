@@ -10,10 +10,10 @@ $array = array(
 );
 
 // basic associative array
-	$user = array(
-		'name' => 'Davy Hellemans',
-		'email' => 'davy@spoon-library.com'
-	);
+$user = array(
+	'name' => 'Davy Hellemans',
+	'email' => 'davy@spoon-library.com'
+);
 
 // multi dimensional arrays
 $users = array(
