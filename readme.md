@@ -1,12 +1,12 @@
 # Fork CMS coding standards
 ## 1. General
 ### 1.1 Encoding
-* Always save files as UTF-8.
-* Do not save the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark).
+* Always save files as UTF-8. This ensures the most interoperability when working with different languages and editors.
+* Do not save the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark). PHP outputs it as-is, causing the HTTP response headers to be sent prematurely.
 
 ### 1.2 Line endings
 * Use only Unix-style line endings (`\n`).
-* Every line has to end with said line ending. (The last line is not magical, so it ends in `\n` just like all other lines.)
+* End every line with said line ending. (The last line is not magical, so it ends in `\n` just like all other lines.)
 
 ### 1.3 Indenting and aligning
 * Indent code using tabs. This allows everyone to use their preferred tab width.
