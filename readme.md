@@ -104,7 +104,7 @@ It's ok to place additional code in a class file (eg require_once statement). In
 	
 Classes that implement interfaces or extend other classes should always be on one line.
 
-	class BackendUsersAdd extend BackendAction implements Backend, Users, Action
+	class BackendUsersAdd extends BackendAction implements Backend, Users, Action
 	{
 	}
 	
