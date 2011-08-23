@@ -1,16 +1,41 @@
 # Fork CMS coding standards
 ## 1. General
 ### 1.1 Encoding
-Files need to be encoded using _UTF-8_
+* Always save files as UTF-8.
+* Do not save the [BOM](http://en.wikipedia.org/wiki/Byte_order_mark).
 
 ### 1.2 Line endings
-Only unix line endings _\n_ are allowed.
+* Use only Unix-style line endings (`\n`).
+* Every line has to end with said line ending. (The last line is not magical, so it ends in `\n` just like all other lines.)
 
-### 1.3 Tabs
-Code is indented using tabs. The display width of 1 tab is equal to 4 spaces.
+### 1.3 Indenting and aligning
+* Indent code using tabs. This allows everyone to use their preferred tab width.
+* Align code spread across multiple lines using spaces. Never assume everyone uses four spaces per tab.
+
+Example:
+
+	<?php
+  
+	function getPosts(SpoonDatabase $db, $bla)
+	{
+		// this is indented with one tab
+		$db->query(
+			// this is indented with two tabs
+			'SELECT *
+			 -- the following lines are indented with two tabs and aligned with one space
+			 FROM table
+			 WHERE bla = ?
+			 ORDER BY id',
+			// this is indented with two tabs
+			$bla
+		);
+	}
 
 ### 1.4 Opening/closing tags
-Never use short open stags. Always go for the standard PHP tags. Note that we do NOT use a closing tag and end the file with a newline.
+* Always use the full `<?php` opening tag. Do not use the deprecated `<?` short tags. (This also avoids problems when mixing XML and PHP code.)
+* Do not use closing tags. This avoids unexpected whitespace causing the HTTP response headers to be sent.
+
+Example:
 
 	<?php
 	
