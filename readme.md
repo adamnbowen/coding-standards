@@ -44,8 +44,6 @@ We don't allow double quotes to demarcate strings containing variables unless it
 	
 ## 3. Arrays
 
-Put a comma after each element of an array when declaring its elements on multiple lines.  It is just that tad bit easier to edit since you don't have to think about (not) adding a comma.
-
 ### 3.1 Numerically indexed arrays
 Don't use negative indices in your arrays. Numeric arrays should start from 0. One trailing space needs to be added after every comma delimiter.
 
@@ -56,7 +54,7 @@ You may also declare an array on multiple lines if this improves readability. Ma
 	$myArray(
 		1, 2, 3,
 		'one', 'two', 'three',
-		$one, $two, $three,
+		$one, $two, $three
 	);
 
 ### 3.2 Associative arrays
@@ -64,7 +62,7 @@ The same rules apply as for numerically indexed arrays.
 
 	$user = array(
 		'name' => 'Davy Hellemans',
-		'email' => 'davy@spoon-library.com',
+		'email' => 'davy@spoon-library.com'
 	);
 
 ### 3.3 Multidimensional arrays
@@ -72,12 +70,12 @@ The same rules apply as for numerically indexed arrays.
 	$users = array(
 		1 => array(
 			'name' => 'Tijs Verkoyen',
-			'email' => 'tijs@sumocoders.be',
+			'email' => 'tijs@sumocoders.be'
 		),
 		2 => array(
 			'name' => 'Matthias Mullie',
-			'email' => 'matthias.mullie@netlash.com',
-		),
+			'email' => 'matthias.mullie@netlash.com'
+		)
 	);
 
 ## 4. Classes
