@@ -40,7 +40,12 @@ Example:
 	<?php
 	
 	// my code goes here...
-	
+
+
+### 1.5 Maximum line length
+The line length of php code may not exceed 120 characters. The target line length we encourage you to aim for is 80 characters where possible and practical.
+
+
 ## 2. Strings
 ### 2.1 Literal strings
 Literal strings should always be demarcaated with single quotes.
