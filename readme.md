@@ -160,16 +160,11 @@ As with classes, the brace should always be written on the line underneath the f
 	class BackendUsersAdd
 	{
 		/**
-		 * Some method with a return value.
-		 *
-		 * @return string
-		 * @param string $username
-		 * @param bool[optional] $isAdmin
-		 * @param array[optional] $options
-		 *
+		 * Some method that does not have any parameters nor a return value.
 		 */
-		public function parse($username, $isAdmin = true, array $options = array())
+		public function enableDebug()
 		{
+			$this->debug = true;
 		}
 		
 		/**
@@ -184,11 +179,16 @@ As with classes, the brace should always be written on the line underneath the f
 		}
 		
 		/**
-		 * Some method that does not have any parameters nor a return value.
+		 * Some method with a return value.
+		 *
+		 * @return string
+		 * @param string $username
+		 * @param bool[optional] $isAdmin
+		 * @param array[optional] $options
+		 *
 		 */
-		public function enableDebug()
+		public function parse($username, $isAdmin = true, array $options = array())
 		{
-			$this->debug = true;
 		}
 	}
 	
