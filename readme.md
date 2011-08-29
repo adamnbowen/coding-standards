@@ -251,11 +251,11 @@ Control statements with the 'switch' statement should not have a space before th
 	{
 		case 'Davy Hellemans':
 			echo 'Hi Davy, how are you?';
-		break;
+			break;
 		
 		case 'Tijs Verkoyen':
 			echo 'Hi Tijs, how are you?';
-		break;
+			break;
 		
 		// unknown author
 		default:
