@@ -294,7 +294,6 @@ No space allowed before the opening parenthesis. Always use brackets on the line
 	{
 		echo 'My name is Michael';
 	}
-	
 	while (1 != 2);
 
 ### 6.6 Try catch
