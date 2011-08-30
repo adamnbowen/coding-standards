@@ -109,7 +109,7 @@ The same rules apply as for numerically indexed arrays.
 
 ## 4. Classes
 ## 4.1 Declaring classes
-The brace is written on the line underneath the class name. Every class must have a documentation block. Multiple classes in one file are not allowed.
+The brace is written on the line underneath the class name. Every class must have a documentation block. Multiple classes in one file are not allowed. Always write your full name as shown in the example below.
 ***
 @tijs - meerdere classes in 1 file is voor mij (davy) toegestaan, maar dan moet er een duidelijke regel zijn wanneer het wel kan en wanneer niet. Als we daar geen deftig antwoord op hebben, dan moeten we mssn 1 class per file afdwingen?
 ***
