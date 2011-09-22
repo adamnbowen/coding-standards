@@ -333,16 +333,12 @@ All PHP/JS files need to contain this copyright notice.
 	 */
 
 ### 7.4 Classes
-The class starts with the description of this specific class, which may use multiple lines. The package & subpackage need to be defined. In case there is no subpackage, this line should not be there. Every developer that works or ever worked on this class should put his name on the list of authors. So if you just added a new method, add your own name to the bottom of the list of authors. Use the same amount of blank lines as you see in the example below.
+The class starts with the description of this specific class, which may use multiple lines. Every developer that works or ever worked on this class should put his name on the list of authors. Don't go adding your name if you just fixed a type. So if you just added a new method, add your own name to the bottom of the list of authors. Use the same amount of blank lines as you see in the example below.
 
 	/**
 	 * This class is used to add a new user to the backend.
 	 *
-	 * @package backend
-	 * @subpackage users
-	 *
 	 * @author Davy Hellemans <davy.hellemans@netlash.com>
-	 * @since 2.6.2
 	 */
 	class BakendUsersAdd
 	{
@@ -351,7 +347,7 @@ The class starts with the description of this specific class, which may use mult
 
 
 ### 7.5 Functions/Methods
-The comment starts with the description of this function, which may be split into multiple lines if necessary. The @return statement goes before @param statements. Use the same amount of blank lines as shown in the example below.
+The comment starts with the description of this function, which may be split into multiple lines if necessary. The @return statement goes before @param statements. Use the same amount of blank lines as shown in the example below. If the method does not have a return value, then there should be no return statement in the PHPDoc.
 
 	class BackendUsersAdd
 	{
