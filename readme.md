@@ -48,7 +48,7 @@ The line length of php code may not exceed 120 characters. The target line lengt
 
 ## 2. Strings
 ### 2.1 Literal strings
-Literal strings should always be demarcaated with single quotes.
+Literal strings should always be demarcated with single quotes.
 
 	$string = 'this is my string';
 
