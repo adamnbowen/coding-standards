@@ -304,7 +304,7 @@ Always use brackets on the line underneath the opening statement.
 		$log->write('There seems to be some problem', $e);
 	}
 
-If the statement is very short, you're allowed to place some things on one line.
+If the statement is very short, you're allowed to place some things on one line. Also note that if your try catch statement is very short, there's no need to leave a blank line between the closing bracket and the catch statement.
 
 	try
 	{
@@ -313,7 +313,6 @@ If the statement is very short, you're allowed to place some things on one line.
 			$api->call('getUserDetails', $i);
 		}
 	}
-	
 	catch(Exception $e) { $i++; }
 
 ## 7. Inline documentation
@@ -324,7 +323,7 @@ We want you to write a lot of comments. Usefull comments that is. There's no nee
 All documentation blocks must be compatible with the phpDocumentor format.
 
 ### 7.3 Files
-@tijs - momenteel hebben files nog geen docblock. Handig zou zijn iets algemeen dat niet te veel verandert door versies. Bijkomend is dat nuttig? verplicht? Zie voorbeeld:
+All PHP/JS files need to contain this copyright notice.
 
 	/*
 	 * This file is part of Fork CMS.
