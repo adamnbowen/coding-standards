@@ -10,7 +10,7 @@
 
 ### 1.3 Indenting and aligning
 * Indent code using tabs. This allows everyone to use their preferred tab width.
-* Align code spread across multiple lines using spaces. Never assume everyone uses four spaces per tab.
+* To align code spread across multiple lines, first indent to the same level with tabs, and then align the code with spaces. Never assume everyone uses four spaces per tab.
 
 Example:
 
